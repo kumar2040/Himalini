@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Himalini:Hindi magazine nepal</title>
+        <meta name="generator" content="Bootply">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		
+		<link href="assets/css/holo.css" rel="stylesheet">
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  ng-app="RSS_Demo" ng-controller="AppCtrl" jt-view-scroll>
+        
+        <div class="page-container">
+  
+	<!-- top navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    	<div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="http://usebootstrap.com/theme/holo"><h4 class="mp">हिमालिनी </h4></a>
+    	</div>
+    </div>
+      
+    <div class="col-sm-12">
+      <div class="row row-offcanvas row-offcanvas-left">
+        
+        <!-- sidebar -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="affix-top" data-spy="affix" data-offset-top="45" data-offset-bottom="90">
+            <ul class="nav" id="sidebar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#section1">Section 1</a></li>
+              <li><a href="#section2">Section 2</a></li>
+              <li><a href="#section3">Section 3</a></li>
+              <li><a href="http://usebootstrap.com/theme/holo" target="ext">Holo Theme</a></li>
+            </ul>
+           </div>
+        </div>
+  	
+        <!-- main area -->
+        <div class="col-xs-12 col-sm-9" data-spy="scroll" data-target="#sidebar-nav">
+          
+          <div class="row">
+           <div class="col-sm-12">
+                <div class="panel panel-default">
+                  <!--<div class="panel-heading"><a href="#" class="pull-right">View all</a> </div>-->
+                    <div class="panel-body">
+                      <div class="list-group">
+                        <div ng-view ></div>
+
+   <div id="veil" ng-show="isLoading"></div>
+<div id="feedLoading" ng-show="isLoading">Loading...</div>
+
+
+<script type="text/ng-template" id="list_view.html">
+
+
+
+
+<div class="well well-small" ng-repeat="entry in feed_result.entries" jt-repeat-done="layoutDone()" ng-class="beenViewed(entry)" ng-cloak>
+<a href="" ng-click="viewDetail(entry)" class="pull-left rssThumb" title="view detail" data-toggle="tooltip"><img ng-repeat="a in mediaOne(entry).thumbnails" ng-src="{{a.url}}" class='poim'></a>
+
+	<!--<a href="{{entry.link}}" target="_blank" title="view at {{feed_result.viewAt}}" data-toggle="tooltip" data-placement="left" class="btn btn-primary pull-right" style="margin: 0 0 5px 10px">View at...</a>-->
+
+	<h4 class='titlehead'><a href="" ng-click="viewDetail(entry)" title="view detail" data-toggle="tooltip">{{entry.title}}</a></h4>
+
+	<p ng-bind-html="entry.contentSnippet"></p>
+
+	<p class="muted">
+		Author: {{entry.author}} 
+		<!--<span class="label label-info" ng-repeat="category in entry.categories">{{category}}</span>-->
+	</p>
+</div>
+</script>
+<script type="text/ng-template" id="detail_view.html">
+<h3 class="lead">{{currEntry.title}}</h3>
+
+
+
+<div class="well well-small">
+	<p ng-bind-html="currEntry.content"></p>
+
+	<p class="muted">Posted: {{currEntry.publishedDate}} - <a href="{{currEntry.link}}" target="_blank" class="text-info" ng-click="videoStop()">view at {{feed_result.viewAt}}</a></p>
+	<div class='row'>
+	<div class="fixed col-sm-12 navbar-fixed-bottom">
+
+
+<li class="fb_icon col-sm-4">
+<a target="_blank" href="http://www.facebook.com/sharer.php?u={{currEntry.link}}"><span><i></i>Share</span></a>
+</li>
+<li class="wt_icon col-sm-4">
+<a target="_blank" href="whatsapp://send?text=To know more on -{{currEntry.contentSnippet}}, click the link - {{currEntry.link}}) "><span><i></i>WhatsApp</span></a>
+</li>
+<li class="tw_icon col-sm-4">
+<a target="_blank" href="http://twitter.com/share?url={{currEntry.link}}"><span><i></i>Tweet</span></a>
+</li>
+
+</div></div>
+</div>
+</script>
+                      </div>
+                    </div>
+                </div>
+             
+               
+        
+            </div>
+            
+          </div><!--/row-->
+          
+          
+         
+          
+        </div><!-- /.col-xs-12 main -->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.page-container-->
+
+
+<div id="footer"><!--footer-->
+  <div class="container">
+      	<div class="row">
+          <ul class="list-unstyled">
+            
+          </ul>
+		</div><!--/row-->
+
+  </div><!--/container-->
+</div><!--/footer-->
+</div>
+
+
+            <div id="push"></div>
+        
+        <script type="text/javascript" async src="assets/js/quant.js"></script>
+		</script><script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        
+        <script type="text/javascript">
+        
+        $(document).ready(function() {
+            $('[data-toggle=offcanvas]').click(function() {
+				$('.row-offcanvas').toggleClass('active');
+			});
+			  
+			$('.btn-toggle').click(function() {
+				$(this).find('.btn').toggleClass('active').toggleClass('btn-default').toggleClass('btn-primary');
+			});
+        });
+        
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-sanitize.min.js"></script>
+<script src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+'use strict';
+
+google.load("feeds", "1");
+</script>
+
+<script src="jt_AJS.js"></script>
+<script src="RSS_Demo.js"></script>
+        
+    
+</body></html>

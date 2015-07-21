@@ -1,0 +1,309 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+html,body {
+  height: 100%;
+  font-family: 'Droid Sans Mono', sans-serif;
+}
+
+p,h1,h2,h3,h4 {
+}
+.panel-heading{
+	background:#9A0201 !important;
+	
+}
+.fixed{
+	 width: 100%;
+  height: 40px;
+  bottom:0px;
+}
+.fixed li{
+	width:33%;
+	display:table-cell;
+	vertical-align:middle;
+	list-style:none;
+	height: 40px;
+	float:left;
+}
+.fixed li a{
+	color:#fff;
+}
+.fb_icon{
+	background:#3A5999;
+}
+.wt_icon{
+	background:#2ABE68;
+}
+.tw_icon{
+	background:#03ADE8;
+}
+.fixed li a i{display:inline-block; width:31px; height:31px; background:url(../img/bg_socailbm.png???) no-repeat center center; float:left;}
+.fixed .wt_icon a i {
+  background-position: -64px 0;
+}
+.fixed .fb_icon a i {
+  background-position: 0 0;
+}
+.fixed .tw_icon a i {
+  background-position: -32px 0;
+}
+.socailbm{
+	  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100px;
+  z-index: 90;
+  width: 100%;
+  height: 40px;
+  background: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mp{
+	text-align:center;
+	color:#fff;
+	font-size:36px;
+	font-weight:bold;
+}
+.lead{
+	font-weight:bold !important;
+	font-size:13px !important;
+	border-bottom:1px dashed #eee;
+}
+.well  p{
+	 color: #777;
+    font-family: "Century Gothic",helvetica,arial,sans-serif;
+
+    line-height: 1.5;
+}
+
+hr {
+  border-color:#191919;
+}
+.well {
+  min-height: 20px;
+  padding: 2px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee !important;
+  text-align:justify;
+
+}
+#veil {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width:100%;
+	cursor: not-allowed;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	background:  url(../img/AngularShieldLogo.jpg) no-repeat center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6863+36,ff170f+99,ff170f+100 */
+background: #ff6863; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff6863 36%, #ff170f 99%, #ff170f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(36%,#ff6863), color-stop(99%,#ff170f), color-stop(100%,#ff170f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff6863 36%,#ff170f 99%,#ff170f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff6863 36%,#ff170f 99%,#ff170f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff6863 36%,#ff170f 99%,#ff170f 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff6863 36%,#ff170f 99%,#ff170f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6863', endColorstr='#ff170f',GradientType=0 ); /* IE6-9 */
+
+}
+#feedLoading {
+	position: absolute;
+	top:200px;
+	width:100%;
+	text-align: center;
+	font-size: 4em;
+	color:white;
+	text-shadow: 2px 2px 2px #021124;
+}
+
+#inputFeed {width: 75%;}
+
+#options_maxItems {width: 5em;}
+
+.titlehead{
+	font-size:13px;
+	color:#666;
+	
+}
+.titlehead a
+{
+	color:#666;
+	font-weight:bold;
+}
+
+/* wrapper for page content to push down footer */
+.page-container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* negative indent footer by its height */
+  margin: 0 auto -120px;
+  /* pad bottom by footer height */
+  padding: 0 0 70px;
+}
+
+/* set the fixed height of the footer here */
+#footer {
+  height: 120px;
+  background-color: #222222;
+  border:0 solid #080808;
+  border-top-width: 1px;
+  margin-top:50px;
+}
+
+#footer > .container {
+  padding: 20px;
+}
+
+body {
+  padding-top: 51px; 
+  background: #1E1E1E;
+  color: #f9f9f9;
+}
+a {
+  color:#bcbcbc;
+}
+.text-center {
+  padding-top: 20px;
+}
+
+#sidebar {
+  height: 100%;
+  padding-right: 0;
+  padding-top: 20px;
+}
+
+#sidebar .affix {
+  position:fixed;
+  top:55;
+  width:220px;
+}
+
+#sidebar .affix-bottom {
+  position:fixed;
+  top:55;
+  width:220px;
+}
+
+#sidebar .nav {
+  width: 95%;
+}
+#sidebar li {
+  border:0 #1e1e1e solid;
+  border-bottom-width:1px;
+}
+#sidebar li a {
+  padding-left:1px;
+}
+#sidebar li a:hover {
+  background-color:#222222;
+  color:#ffffff;
+}
+
+/* collapsed sidebar styles */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -41.6%;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -41.6%;
+  }
+  .row-offcanvas-right.active {
+    right: 41.6%;
+  }
+  .row-offcanvas-left.active {
+    left: 41.6%;
+  }
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 41.6%;
+  }
+  #sidebar {
+    background-color:#3b3b3b;
+    padding-top:0;
+  }
+  #sidebar .nav>li {
+    color: #ddd;
+    background: linear-gradient(#3E3E3E, #383838);
+    border-top: 1px solid #484848;
+    border-bottom: 1px solid #2E2E2E;
+    padding-left:10px;
+  }
+  #sidebar .nav>li:first-child {
+    border-top:0;
+  }
+  #sidebar .nav>li>a {
+    color: #ddd;
+  }
+  #sidebar .nav>li>a>img {
+    max-width: 14px;
+  }
+  #sidebar .nav>li>a:hover, #sidebar .nav>li>a:focus {
+    text-decoration: none;
+    background: linear-gradient(#373737, #323232);
+    color: #fff;  
+  }
+  #sidebar .nav .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+  }
+  #sidebar .nav a:hover .caret{
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+  }
+}
+.poim{
+	width:60px;
+	margin:2px;
+}
+p img{
+	border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+/* theme */
+.btn,.form-control,.alert,.progress,.panel,.list-group,.well,.list-group-item:first-child {border-radius:1px;box-shadow:0 0 0;}
+.btn {border-color:transparent;}
+
+.btn-primary,.label-primary,.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus,.btn.active,a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+   background-color:#0099CC;
+   border-color:transparent;
+}
+.btn-info,.label-info,.progress-bar-info {
+  background-color:#33b5e5;
+}
+.btn-success,.label-success,.progress-bar-success {
+  background-color:#669900;
+}
+.btn-danger,.label-danger,.progress-bar-danger {
+  background-color:#FF4444;
+}
+.btn-warning,.label-warning,.progress-bar-warning {
+  background-color:#FFBB33;
+  color:#444444;
+}
+.nav-tabs>li>a {
+  border-radius:0;
+}
+     
+      
+      
+h3,h4,h5,.panel {
+   color:#555555;
+}
+.panel hr {
+   border-color:#efefef;
+}

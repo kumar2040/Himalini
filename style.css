@@ -1,0 +1,106 @@
+body {padding: 0;}
+
+/*h1, h3, p, .well, .alert, .changeList {
+	margin-right: 30px;
+	margin-left: 30px;
+	
+}*/
+h1{
+	text-align:center;
+	background:#9A0201;
+}
+@media screen and (max-width: 640px) {
+	/*h1, h3, p, .well, .alert, .changeList {
+		margin-right: 10px;
+		margin-left: 10px;
+	}*/
+}
+
+.dropdown-menu p, .well p {
+		margin-right: 0;
+		margin-left: 0;
+}
+
+#topNav {
+	position: fixed;
+	top:0;
+	left: 0;
+	padding: 1px 0;
+	background:#000000;
+	width: 100%;
+	z-index: 10;
+}
+.ab {
+	position: fixed;
+	top:0;
+	left: 0;
+	background:#9A0201;
+	width: 100%;
+	z-index: 10;
+}
+
+#aboutInfo {
+	margin-right: 10px;
+}
+#aboutInfo .dropdown-menu {
+	padding:10px;
+	left:-300%;
+}
+#aboutInfo p.pull-right {
+	text-align: right;
+	margin-bottom: 0
+}
+
+.btnPadR {margin-right: 10px;}
+
+.label {margin-right: 5px;}
+
+.btn-group + .btn-group {margin-left: 0;}
+
+h3.lead {margin-bottom: 10px;}
+
+.well .rssThumb img {
+	width: 60px;
+	margin: 0 8px 2px 0;
+}
+
+.beenViewed {
+	background-color: #ffffcc;
+}
+
+#vPlayer {
+	display: block;
+	margin:0 auto 10px auto;
+	width: 512px;
+	height: 288px;
+}
+
+#vidTagAlert {
+	text-align:center;
+	display:none;
+}
+
+#veil {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:100%;
+	width:100%;
+	cursor: not-allowed;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	background: #000000 url(../AngularShieldLogo.png) no-repeat center;
+}
+#feedLoading {
+	position: absolute;
+	top:200px;
+	width:100%;
+	text-align: center;
+	font-size: 4em;
+	color:white;
+	text-shadow: 2px 2px 2px #021124;
+}
+
+#inputFeed {width: 75%;}
+
+#options_maxItems {width: 5em;}
